@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: backend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    env:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000  
+      - key: MONGODB_URI
+        value: mongodb+srv://pojuagbomeji:MEGatsFTFDbYW2EG@cluster1.c9vgdvm.mongodb.net/Restaurant-App
+      
